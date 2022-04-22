@@ -31,7 +31,8 @@ const computerSelection = computerPlay();
 console.log(playRound(playerSelection,computerSelection));
 console.log(result);*/
 
-let score = 0;
+let playerScore = 0;
+let computerScore = 0;
 function game(){
     for(let i = 1; i <= 5; i++){
     let playerSelection = prompt("Rock paper scissors?").toLocaleLowerCase();
@@ -43,8 +44,14 @@ function game(){
     
    
    
-    if (result === 'win'){score++;console.log( 'score+1')}
-    console.log("total score="+score);
+    if (result === 'win'){playerScore++;console.log( 'your score+1')}
+    if (result === 'lose'){computerScore++;console.log('computer score+1')}
     }
-}
+    console.log('your score:'+playerScore)
+    console.log("computer's score:"+computerScore)
+    if (playerScore > computerScore){console.log("Game is over.You are the winner!")}
+    if (playerScore < computerScore){console.log("Game is over.Computer is the winner!")}
+    else {console.log("Game is over.It's even!")}
+    }
+
 console.log(game())
