@@ -97,27 +97,7 @@ const computerSelection = computerPlay();
 console.log(playRound(playerSelection,computerSelection));
 console.log(result);*/
 
-const computerSelection = computerPlay();
-function game(){
-    //for(let i = 1;i<=5;i++) {
-    let playerSelection = addEventListener('mouseClick');
-    
-    console.log('ROUND'+i);
-    console.log('you say:'+playerSelection);
-    console.log('computer says:'+computerSelection);
-    console.log(playRound(playerSelection,computerSelection));
-    
-   
-   
-    if (result === 'win'){playerScore++;console.log( 'your score+1')}
-    if (result === 'lose'){computerScore++;console.log('computer score+1')}
-    }
-    console.log('your score:'+playerScore)
-    console.log("computer's score:"+computerScore)
-    if (playerScore > computerScore){console.log("Game is over.You are the winner!")}
-    if (playerScore < computerScore){console.log("Game is over.Computer is the winner!")}
-    else {console.log("Game is over.It's even!")}
-    
+
     
     
 
@@ -128,6 +108,4 @@ function game(){
 
 
     
-
-//console.log(game())
 
